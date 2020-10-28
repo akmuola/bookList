@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <title>Book Lists</title>
+  <style>
+    .success, .error{
+color:white;
+padding:5px;
+margin:5px 0px 15px 0px;
+    }
+    .success{
+      background: green;
+    }
+    .error{
+      background: red;
+    }
+  </style>
+</head>
+<body class="bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 mx-auto">
+        <div class="card card-body text-center mt-5">
+          <h1 class="heading display-10 pb-3">Add Book</h1>
+          <form id="form-book">
+            <div class="form-group">
+              <div class="input-group">
+              <div class="input-group-text"><h3 class="fa fa-book"></h3></div>
+              <input type="text" id="title" class="form-control" placeholder="Enter Book Title">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+              <div class="input-group-text"><h3 class="fa fa-user"></h3></div>
+              <input type="text" id="author" class="form-control" placeholder="Enter Book Author">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+              <div class="input-group-text"><h3 class="fa fa-leaf"></h3></div>
+              <input type="text" id="isbn" class="form-control" placeholder="Enter Book ISBN#">
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Submit" class="btn btn-dark btn-block">
+            </div>
+          </form>
+     
+          <table class="table">
+            <thead></thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN#</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="app.js"></script>
+</body>
+</html>
